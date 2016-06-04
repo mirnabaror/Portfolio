@@ -1,0 +1,208 @@
+/* =================================================
+Base Element Styles
+==================================================== */
+
+html {
+  color: #1a1a1a;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  /*---- To ensure a sticky footer ----*/
+  display: flex;
+  min-height: 100vh;
+  /*-----------------------------------*/
+  flex-direction: column;
+  background-color: #fff;
+  font-family: 'Neuton', serif;
+}
+
+p {
+  font-family: 'Neuton', serif;
+  font-size: 1em;
+  line-height: 1.375em;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a
+  {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-flow: column;
+  min-width: 20em;
+  width: 80%;
+  margin: 0 auto 0;
+  padding: 0;
+}
+
+h1 {
+  color: #1a1a1a;
+  font-family: 'Neuton', serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  line-height: 1.25em;
+  margin: 30px 0 0;
+  padding: 0;
+}
+
+h2 {
+  color: #1a1a1a;
+  font-family: 'Neuton', serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  line-height: 1.15em;
+  margin: 0;
+  padding: 0;
+}
+
+/* --------- Navigation --------- */
+
+nav {
+  order: 2;
+  background-color: #fff;
+  margin: 5px 0 20px;
+}
+
+nav li {
+  font-family: 'Neuton', serif;
+  font-style: italic;
+  font-size: 1em;
+  margin: 0;
+  padding: 0 2px;
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+nav a:visited {
+  color: #1a1a1a;
+}
+
+nav a:hover {
+  color: #00ccff;
+  text-decoration: underline;
+}
+
+/* =================================================
+Base Layout Styles
+==================================================== */
+
+.main-container {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+  align-content: flex-start;
+  width: 80%;
+  margin: 0 auto 0;
+  background-color: #fff;
+}
+
+footer {
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+footer li {
+  font-family: 'Neuton', serif;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1.375em;
+  font-weight: 300;
+  color: #1a1a1a;
+  padding: 0 3px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: #1a1a1a;
+}
+
+footer a:hover {
+  color: #00ccff;
+  text-decoration: underline;
+}
+
+/* =================================================
+Flexbox Layout
+==================================================== */
+
+/* Small */
+@media (min-width: 600px) {
+
+header {
+  display: flex;
+  flex-flow: column;
+}
+
+
+/* Medium */
+@media (min-width: 769px) {
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 80%;
+}
+
+h2 {
+  width: 40%;
+  padding: 0 40px 0 0;
+}
+
+.writing-content {
+  width: 60%;
+}
+}
+
+
+/* Large */
+@media (min-width: 1025px) {
+
+h2 {
+  width: 40%;
+  padding: 0 40px 0 0;
+}
+
+.writing-content {
+  width: 60%;
+}
+}
+
